@@ -4,7 +4,6 @@ const ProfileController = require("./controllers/ProfileController")
 const JobController = require("./controllers/JobController")
 const DashboardController = require("./controllers/DashboardController")
 
-
 // ============== GET =============
 routes.get("/", DashboardController.index)
 routes.get("/job", JobController.create)
