@@ -1,7 +1,7 @@
 let data = {
     name: "Natan",
     avatar: "https://github.com/FalconiN.png",
-    "monthly-budget": 4,
+    "monthly-budget": 4000,
     "days-per-week": 5,
     "hours-per-day": 8,
     "vacation-per-year": 4,
