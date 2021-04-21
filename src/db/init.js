@@ -37,25 +37,25 @@ const initDb = {
             VALUES("Natan", "https://github.com/FalconiN.png", 3000, 5, 8, 4, 75);
         `);
     
-        await db.run(`INSERT INTO jobs
-            (
-                name, 
-                daily_hours, 
-                total_hours, 
-                created_at
-            )
-            VALUES("Pizzaria Guloso", 3, 2, 1617514376018);
-        `);
+        // await db.run(`INSERT INTO jobs
+        //     (
+        //         name, 
+        //         daily_hours, 
+        //         total_hours, 
+        //         created_at
+        //     )
+        //     VALUES("Pizzaria Guloso", 3, 2, 1617514376018);
+        // `);
     
-        await db.run(`INSERT INTO jobs
-            (
-                name, 
-                daily_hours, 
-                total_hours, 
-                created_at
-            )
-            VALUES("Pizzaria Guloso TESTE 2", 3, 2, 1617514376018);
-        `);
+        // await db.run(`INSERT INTO jobs
+        //     (
+        //         name, 
+        //         daily_hours, 
+        //         total_hours, 
+        //         created_at
+        //     )
+        //     VALUES("Pizzaria Guloso TESTE 2", 3, 2, 1617514376018);
+        // `);
     
         await db.close()
     }
