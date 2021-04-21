@@ -5,7 +5,7 @@ const JobUtils = require("../utils/JobUtils")
 
 module.exports = {
     async index(req, res) {
-        const jobs = Job.get()
+        const jobs = await Job.get();
         const profile = await Profile.get()
 
         let statusCount = {
@@ -15,6 +15,8 @@ module.exports = {
         }
 
         let jobTotalHours = 0
+
+        console.log(jobs)
 
         const updatedJobs = jobs.map((job) => {
             const remaining = JobUtils.remainingDays(job)
