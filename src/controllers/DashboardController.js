@@ -16,8 +16,6 @@ module.exports = {
 
         let jobTotalHours = 0
 
-        console.log(jobs)
-
         const updatedJobs = jobs.map((job) => {
             const remaining = JobUtils.remainingDays(job)
             const status = remaining <= 0 ? 'done' : 'progress'
